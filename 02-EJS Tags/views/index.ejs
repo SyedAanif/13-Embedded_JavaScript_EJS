@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Output variable -->
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- NOTE don't use data, use keys of object directly -->
+    <!-- Output variable -->
+    <h1> <%= title %> </h1>
+
+    <p>Current second: <%= seconds %></p>
+
+    <!-- Executable no output JS -->
+    <% if (seconds % 2 === 0) { %>
+        <ul>
+            <!-- Executable no output JS -->
+            <% for( let index = 0; index < items.length; index++ ) { %>
+                <li>
+                    <!-- Output variable -->
+                    <%= items[index] %>
+                </li>
+            <% } %>
+        </ul>
+    <% } else {%>
+        <p>No items to display</p>
+    <% } %>
+
+    <p>
+        <!-- HTML content render -->
+        <%- htmlContent %>
+    </p>
+
+    <!-- Include files -->
+    <%- include("footer.ejs") %>
+    
+</body>
+</html>

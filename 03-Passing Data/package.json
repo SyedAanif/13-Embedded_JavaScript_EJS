@@ -1,0 +1,17 @@
+{
+  "name": "03-passing-data",
+  "version": "1.0.0",
+  "description": "passing data between clent-server for EJS templates",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Aanif",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
